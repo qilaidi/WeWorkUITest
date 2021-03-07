@@ -30,6 +30,11 @@ public class TestWeWork {
         app.toMemberAdd().add(name, name, "13900001232").delete(name);
     }
 
+    @Test
+    public void deleteCurrentPage(){
+        app.toContact().deleteCurrentPage();
+    }
+
     @AfterClass
     public static void afterAll() throws InterruptedException {
         app.quit();
